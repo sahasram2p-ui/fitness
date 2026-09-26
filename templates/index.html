@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Assistant</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main class="app-shell">
+<section class="hero"><div class="brand-icon">💪</div><div><h1>Fitness Assistant</h1><p>Your AI guide for workouts, fitness & wellness</p></div><div class="status"><span></span> AI Online</div></section>
+<section class="quick-section"><div class="section-title">What can I help with?</div><div class="quick-grid">
+<button class="quick-card" data-prompt="Create a beginner home workout plan."><span>🏠</span><b>Home Workout</b><small>Beginner routines</small></button>
+<button class="quick-card" data-prompt="Give me a strength training routine for beginners."><span>🏋️</span><b>Strength</b><small>Build strength</small></button>
+<button class="quick-card" data-prompt="Suggest a simple cardio workout for beginners."><span>🏃</span><b>Cardio</b><small>Improve endurance</small></button>
+<button class="quick-card" data-prompt="Give me a stretching and mobility routine."><span>🧘</span><b>Mobility</b><small>Stretch & recover</small></button>
+</div></section>
+<section id="chat-box" class="chat-box"><div class="welcome"><div class="welcome-icon">✨</div><h2>Ready to get moving?</h2><p>Ask me about workouts, exercise, recovery, mobility, or general fitness.</p></div></section>
+<section class="input-wrap"><div class="input-box"><input id="message-input" type="text" placeholder="Ask a fitness question..." autocomplete="off"><button id="send-button">➤</button></div><div class="disclaimer">Fitness information only • For medical concerns, consult a healthcare professional.</div></section>
+</main><script src="{{ url_for('static', filename='script.js') }}"></script>
+</body></html>
